@@ -1,8 +1,8 @@
 
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+import Button from "@/components/ui/Button";
 
 const NotFound = () => {
   const location = useLocation();
@@ -25,10 +25,13 @@ const NotFound = () => {
           Sorry, we couldn't find the page you're looking for. It might have been removed or doesn't exist.
         </p>
         <Button 
-          className="bg-primary text-white hover:bg-primary-600"
+          variant="primary" 
+          className="text-white"
           onClick={() => window.location.href = '/'}
+          icon={<ArrowLeft size={20} />}
+          iconPosition="left"
         >
-          <ArrowLeft className="mr-2 h-4 w-4" /> Return to Home
+          Return to Home
         </Button>
       </div>
     </div>

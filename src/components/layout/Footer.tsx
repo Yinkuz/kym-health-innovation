@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUp, Mail, MapPin, Phone, Linkedin, Twitter } from 'lucide-react';
+import { ArrowUp, Mail, MapPin, Phone, Linkedin as LinkedinIcon, Twitter as TwitterIcon } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -26,10 +25,10 @@ const Footer = () => {
             </p>
             <div className="flex mt-6 space-x-4">
               <a href="#" className="text-primary-200 hover:text-white transition-colors">
-                <Linkedin size={20} />
+                <LinkedinIcon size={20} />
               </a>
               <a href="#" className="text-primary-200 hover:text-white transition-colors">
-                <Twitter size={20} />
+                <TwitterIcon size={20} />
               </a>
             </div>
           </div>
