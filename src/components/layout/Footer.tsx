@@ -21,7 +21,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/8ec757c6-b6f0-4d34-aafb-99602e022561.png" 
                 alt="KYM Holdings Logo" 
-                className="h-12 w-auto bg-white p-1 rounded"
+                className="h-24 w-auto bg-white p-1 rounded" // Doubled height from h-12 to h-24
               />
             </Link>
             <p className="mt-4 text-primary-100 text-sm">

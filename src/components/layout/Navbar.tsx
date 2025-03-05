@@ -43,7 +43,7 @@ const Navbar = () => {
               <img 
                 src="/lovable-uploads/8ec757c6-b6f0-4d34-aafb-99602e022561.png" 
                 alt="KYM Holdings Logo" 
-                className="h-12 w-auto"
+                className="h-24 w-auto" // Doubled height from h-12 to h-24
               />
             </Link>
           </div>
