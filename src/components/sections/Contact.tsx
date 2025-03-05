@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
-import { Mail, MessageSquare, MapPin, Phone, CheckCircle } from 'lucide-react';
+import { Mail, MessageSquare, MapPin, Phone, CheckCircle, Linkedin as LinkedinIcon, Twitter as TwitterIcon } from 'lucide-react';
 import Button from '../ui/Button';
 import { toast } from 'sonner';
 
@@ -255,14 +255,14 @@ const Contact = () => {
                     className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white hover:bg-primary-600 transition-colors"
                     aria-label="LinkedIn"
                   >
-                    <Linkedin size={20} />
+                    <LinkedinIcon size={20} />
                   </a>
                   <a 
                     href="#" 
                     className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white hover:bg-primary-600 transition-colors"
                     aria-label="Twitter"
                   >
-                    <Twitter size={20} />
+                    <TwitterIcon size={20} />
                   </a>
                 </div>
               </div>
