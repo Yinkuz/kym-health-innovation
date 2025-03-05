@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUp, Mail, MapPin, Phone, Linkedin as LinkedinIcon, Twitter as TwitterIcon } from 'lucide-react';
@@ -16,9 +17,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-1 lg:col-span-1">
-            <Link to="/" className="flex items-center">
-              <span className="text-2xl font-bold text-white">KYM</span>
-              <span className="ml-1 text-2xl font-bold text-primary-200">Holdings</span>
+            <Link to="/" className="inline-block">
+              <img 
+                src="/lovable-uploads/8ec757c6-b6f0-4d34-aafb-99602e022561.png" 
+                alt="KYM Holdings Logo" 
+                className="h-12 w-auto bg-white p-1 rounded"
+              />
             </Link>
             <p className="mt-4 text-primary-100 text-sm">
               Transforming healthcare through strategic growth & innovation. We acquire and enhance healthcare businesses across the UK.

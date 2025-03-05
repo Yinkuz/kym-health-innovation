@@ -40,8 +40,11 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <span className="text-2xl font-bold text-primary">KYM</span>
-              <span className="ml-1 text-2xl font-bold text-foreground">Holdings</span>
+              <img 
+                src="/lovable-uploads/8ec757c6-b6f0-4d34-aafb-99602e022561.png" 
+                alt="KYM Holdings Logo" 
+                className="h-12 w-auto"
+              />
             </Link>
           </div>
           
