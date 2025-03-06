@@ -1,3 +1,4 @@
+
 import * as React from "react"
 import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog"
 
@@ -90,10 +91,7 @@ const AlertDialogAction = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <AlertDialogPrimitive.Action
     ref={ref}
-    className={cn(
-      buttonVariants({ variant: "primary" }),
-      className
-    )}
+    className={cn(buttonVariants({ variant: "primary" }), className)}
     {...props}
   />
 ))
@@ -105,10 +103,7 @@ const AlertDialogCancel = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <AlertDialogPrimitive.Cancel
     ref={ref}
-    className={cn(
-      buttonVariants({ variant: "ghost" }),
-      className
-    )}
+    className={cn(buttonVariants({ variant: "ghost" }), className)}
     {...props}
   />
 ))
@@ -127,5 +122,5 @@ export {
   AlertDialogDescription,
   AlertDialogAction,
   AlertDialogCancel,
-  AlertDialogTrigger: AlertDialogPrimitive.Trigger,
+  AlertDialogTrigger: AlertDialogPrimitive.Trigger
 }
