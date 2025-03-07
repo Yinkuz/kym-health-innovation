@@ -8,9 +8,13 @@ import Blog from '@/components/sections/Blog';
 import Contact from '@/components/sections/Contact';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import Debug from '@/components/Debug';
 
 const Index = () => {
   useEffect(() => {
+    // Log when the page loads
+    console.log('Index page loaded');
+    
     // Setup scroll animation observers
     const observer = new IntersectionObserver(
       (entries) => {
@@ -43,6 +47,7 @@ const Index = () => {
         <Contact />
       </main>
       <Footer />
+      <Debug />
     </div>
   );
 };

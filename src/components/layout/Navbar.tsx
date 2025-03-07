@@ -28,11 +28,14 @@ const Navbar = () => {
     { name: 'Contact', href: '#contact' },
   ];
 
+  // Use the import.meta.env.BASE_URL to get the correct base path
+  const logoPath = `${import.meta.env.BASE_URL}lovable-uploads/8ec757c6-b6f0-4d34-aafb-99602e022561.png`;
+  
   return (
     <nav 
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-medium",
-        isScrolled ? "bg-white/90 shadow-md backdrop-blur-md py-2" : "bg-white py-4" // Changed from bg-transparent to bg-white
+        isScrolled ? "bg-white/90 shadow-md backdrop-blur-md py-2" : "bg-white py-4"
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,7 +44,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/8ec757c6-b6f0-4d34-aafb-99602e022561.png" 
+                src={logoPath}
                 alt="KYM Holdings Logo" 
                 className="h-24 w-auto"
               />
@@ -57,7 +60,7 @@ const Navbar = () => {
                   href={link.href}
                   className={cn(
                     "hover:text-primary transition-colors",
-                    isScrolled ? "text-foreground" : "text-foreground" // Changed from text-white to text-foreground
+                    isScrolled ? "text-foreground" : "text-foreground"
                   )}
                 >
                   {link.name}
@@ -72,7 +75,7 @@ const Navbar = () => {
               type="button"
               className={cn(
                 "inline-flex items-center justify-center p-2 rounded-md",
-                isScrolled ? "text-foreground hover:text-primary" : "text-foreground hover:text-primary" // Changed from text-white to text-foreground
+                isScrolled ? "text-foreground hover:text-primary" : "text-foreground hover:text-primary"
               )}
               aria-controls="mobile-menu"
               aria-expanded="false"

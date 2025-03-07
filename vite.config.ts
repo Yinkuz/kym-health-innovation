@@ -20,5 +20,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: './',
+  base: '/kym-health-innovation/', // Set to your repository name
 }));
