@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { cn } from '@/lib/utils';
 
@@ -11,7 +10,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   fullWidth?: boolean;
 }
 
-const button = ({
+const Button = ({
   variant = 'primary',
   size = 'md',
   children,
@@ -20,7 +19,7 @@ const button = ({
   fullWidth = false,
   className,
   ...props
-}: buttonProps) => {
+}: ButtonProps) => {
   const baseStyles = "inline-flex items-center justify-center rounded-md font-medium transition-all focus:outline-none focus:ring-2 focus:ring-offset-2";
   
   const variantStyles = {
@@ -57,4 +56,4 @@ const button = ({
   );
 };
 
-export default button;
+export default Button; // Ensure this line is present
