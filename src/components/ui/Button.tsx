@@ -40,7 +40,7 @@ const Button = ({
   const widthStyle = fullWidth ? "w-full" : "";
 
   return (
-    <button
+    <Button
       className={cn(
         baseStyles,
         variantStyles[variant],
