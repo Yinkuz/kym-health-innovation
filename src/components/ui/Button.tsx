@@ -11,7 +11,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   fullWidth?: boolean;
 }
 
-const Button = ({
+const button = ({
   variant = 'primary',
   size = 'md',
   children,
@@ -20,7 +20,7 @@ const Button = ({
   fullWidth = false,
   className,
   ...props
-}: ButtonProps) => {
+}: buttonProps) => {
   const baseStyles = "inline-flex items-center justify-center rounded-md font-medium transition-all focus:outline-none focus:ring-2 focus:ring-offset-2";
   
   const variantStyles = {
@@ -40,7 +40,7 @@ const Button = ({
   const widthStyle = fullWidth ? "w-full" : "";
 
   return (
-    <Button
+    <button
       className={cn(
         baseStyles,
         variantStyles[variant],
@@ -57,4 +57,4 @@ const Button = ({
   );
 };
 
-export default Button;
+export default button;
