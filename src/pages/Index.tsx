@@ -12,10 +12,10 @@ import Debug from '@/components/Debug';
 
 const Index = () => {
   useEffect(() => {
-    // Log when the page loads
     console.log('Index page loaded');
+    console.log('Current base path:', import.meta.env.BASE_URL);
+    console.log('Window location:', window.location.href);
     
-    // Setup scroll animation observers
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -37,6 +37,7 @@ const Index = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <Debug />
       <Navbar />
       <main className="flex-grow">
         <Hero />
@@ -47,9 +48,9 @@ const Index = () => {
         <Contact />
       </main>
       <Footer />
-      <Debug />
     </div>
   );
 };
 
 export default Index;
+
